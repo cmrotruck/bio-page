@@ -1,0 +1,22 @@
+header{
+    display: inline-block;
+}
+
+header nav{
+    float: right;
+    margin: 7px 0;
+}
+
+.biopic{
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bio{
+    text-align: center;
+    margin-left: auto;
+    margin-left: auto;
+}
