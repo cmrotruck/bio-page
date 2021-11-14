@@ -1,43 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chad Rotruck's Bio Page</title>
+    <title>Chad Rotruck's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+    <!-- Header Section Start -->
     <header>
         <h1>
-            Rotruck
+            <a href="/">Rotruck</a>
         </h1>
         <nav>
             <ul>
-                <!-- List Element -->
+                <!-- Unordered List Elements -->
                 <li>
                     <!-- List Item -->
-                    Portfolio
+                    <a href="#About-Me">About Me</a>
                 </li>
                 <li>
                     <!-- List Item -->
-                    Resume
+                    <a href="#work">Work</a>
                 </li>
                 <li>
                     <!-- List Item -->
-                    About Me
+                    <a href="#contact-me">Contact Me</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div>
-        <img class="biopic" src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-9/174801457_4058789534178448_1350389234959102577_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=a26aad&_nc_ohc=KoBEuzd6xe4AX9j9lpt&tn=RAO6AsAhJlnbI4zW&_nc_ht=scontent-iad3-1.xx&oh=4299bdffa4456313a5e18d5ce3e3b46f&oe=619B64F9" alt="Image of Chad Rotruck holding a 900 Global Volatility Torque after shooting 299.">
-        <p class="bio">Current student player/coach for The Ohio State University's bowling club team. I have 30 years bowling experience. Taught by both my father and step-father as a teen and self taught as an adult until I enrolled at Ohio State where I received small tweeks to my game.</p>
-    </div>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero">
+        <img src="./assets/images/badlands-social-thumb.jpg"
+             alt="Beautiful picture of the rock formation in the Badlands in South Dakota" />
+        <h3 class="hero-text">Badlands, South Dakota, USA</h3>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Body Section Start -->
+    <section class="content" >
+        <!-- About Me Section Start -->
+        <div id="About-Me" class="aboutme">
+            <h3>About<br>Me</h3>
+            <p class="bio">
+                seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
+                messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
+                Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
+                tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa
+                you probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
+            </p>
+        </div>
+        <!-- About Me Section End -->
+
+        <!-- Work Section Start -->
+        <div id="work" class="work">
+            <h3>Work</h3> 
+            <div class="jobs">
+                <!-- Run-Buddy -->
+                <div class="run-buddy">
+                    <a href="https://cmrotruck.github.io/run-buddy/">
+                        <img src="../assets/images/hero-bg.jpg" alt=""/>
+                    </a>  
+                    <p>Run-Buddy</p>                  
+                </div>
+                <!-- Horiseon-Project -->
+                <div class="job">
+                    <a href="https://cmrotruck.github.io/Horiseon-Project/">
+                        <img src="../assets/images/digital-marketing-meeting.jpg" alt=""/>
+                    </a>
+                    <p>Horiseon Project</p>
+                </div>
+                <!-- Future Job Secion -->
+                <div class="job">
+                    <p>Future Project Placeholder</p>
+                </div>
+            </div>
+        </div>
+        <!-- Work Section End -->
+
+        <!-- Contact Me Section Start -->
+        <div id="contact-me" class="aboutme">
+            <h3>Contact<br>Me</h3>
+            <div class="contact-me">
+                <p>614.373.4920</p>
+                <p>crotruck@gmail.com</p>
+                <p><a href="https://www.facebook.com/crotruck">Facebook</a></p>
+                <p><a href="https://github.com/cmrotruck">GitHub</a></p>
+            </div>
+        </div>
+        <!-- Contact Me Section End -->
+        
+    </section>
+    <!-- Body Section End -->
+
+    <!-- Footer Section Start -->
     <footer>
-
+        <h2>Made by Chad Rotruck</h2>
+        <div>
+            &copy; 2021
+        </div>
     </footer>
-
-    
+    <!-- Footer Section End -->
 </body>
+
 </html>

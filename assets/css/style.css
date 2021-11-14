@@ -1,22 +1,234 @@
+:root{
+    --primary-color: rgb(21, 21, 83);
+    --secondary-color: rgb(117, 117, 212);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+  }
+
 header{
-    display: inline-block;
+
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: var(--tertiary-color); */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* position: sticky;
+    position: -webkit-sticky; */
+    top: 0;
+    z-index: 9999;
+    border-bottom: 2px solid black;
+}
+
+header h1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 55px;
 }
 
 header nav{
     float: right;
     margin: 7px 0;
-}
-
-.biopic{
-    width: 600px;
-    height: 600px;
+    color: white;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding-inline-start: 40px;
+    font-size: 25px;
 }
 
-.bio{
-    text-align: center;
-    margin-left: auto;
-    margin-left: auto;
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
 }
+
+header nav ul li{
+    display: inline;
+    padding: 20px;    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+body div{
+    background-color: white;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+}
+
+
+
+.hero{
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
+  position: relative;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.hero .hero-text{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    background-color: var(--secondary-color);
+    display: flex;
+    font-size: 35px;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    margin-top: 3.5%;
+    
+}
+.aboutme{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutme h3{
+    width: 20%;
+    text-align: right;
+    position: absolute;
+    font-size: 35px;
+}
+
+.aboutme .bio{
+    width: 70%;
+    font-size: 25px;
+    border-left: 2px solid black;
+    padding: 0 20px 0 20px;
+    position: absolute;
+    left: 22%;   
+}
+
+.work{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.work h3{
+    width: 20%;
+    text-align: right;
+    position: absolute;
+    font-size: 35px;
+}
+
+.work .jobs{
+    width: 70%;
+    height: 100%;
+    left: 22%; 
+    position: absolute;
+    border-left: 2px solid black;
+    padding: 20px;
+    /* display: flex; */
+}
+
+.work .jobs .run-buddy{
+    width: 100%;
+    height: 50%;
+    background-color: gray;
+    padding: 0 20px;
+    /* margin: 0 15px; */
+    position: relative;
+}
+
+.work .jobs .run-buddy img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.work .jobs .run-buddy p{
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+    font-size: 85px;
+    color: #fce138;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.work .jobs .job{
+    width: 49.8%;
+    height: 45%;
+    background-color: gray;
+    /* padding: 0 25px 0 25px; */
+    /* margin: 0 20px 0 0; */
+    position: relative;
+    display: inline-block;
+    /* justify-content: center; */
+}
+
+.work .jobs .job img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.work .jobs .job p{
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    font-size: 35px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.contact-me{
+    width: 70%;
+    height: 100%;
+    left: 22%;
+    position: absolute;
+    border-left: 2px solid black;
+    padding-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-me p{
+    font-size: 35px;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border-top: 2px solid black;
+}
+
+footer h2{
+    font-size: 20px;
+}
+
+footer div{
+    background-color: var(--primary-color);
+    border: none;
+}
+
+
