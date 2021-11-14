@@ -120,7 +120,6 @@ body div{
 
 .work{
     width: 100%;
-    height: auto;
     position: relative;
 }
 
@@ -142,7 +141,7 @@ body div{
 }
 
 .work .jobs .run-buddy{
-    width: 100%;
+    width: 90%;
     height: 50%;
     background-color: gray;
     padding: 0 20px;
@@ -167,14 +166,12 @@ body div{
 }
 
 .work .jobs .job{
-    width: 49.8%;
+    width: 44.8%;
     height: 45%;
     background-color: gray;
-    /* padding: 0 25px 0 25px; */
-    /* margin: 0 20px 0 0; */
+    margin: 5px 0 0 0;
     position: relative;
     display: inline-block;
-    /* justify-content: center; */
 }
 
 .work .jobs .job img{
@@ -215,7 +212,6 @@ body div{
 .contact-me p{
     font-size: 35px;
     padding: 20px;
-
 }
 
 footer{
@@ -238,4 +234,198 @@ footer div{
     border: none;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1062px) {
+    .aboutme-container{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .aboutme-container{
+        height: 300px;
+    }
+
+    .work-container{
+        height: 700px;
+        margin-top: 0;
+    }
+    
+    .work{
+        height: 200px;;
+    }
+
+    .work h3{
+        text-align: right;
+    }
+
+    .work .jobs{
+        /* margin-left: 20px; */
+        height: 700px;
+    }
+
+    .work .jobs .run-buddy{
+        height: 30%;
+        margin-bottom: 5px;
+    }
+
+    .work .jobs .run-buddy p{
+        font-size: 25px;
+        left: 20px;
+    }
+
+
+    .work .jobs .job{
+        height: 35%;
+        width: 90%;
+    }
+
+    .work .jobs .job p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .aboutme-container{
+        height: 350px;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .hero .hero-text{
+        font-size: 20px;
+    }
+
+    .aboutme-container{
+        height: 400px;
+    }
+
+    .work-container{
+        height: 600px;
+    }
+    
+    .work{
+        height: 200px;;
+    }
+
+    .work h3{
+        text-align: right;
+    }
+
+    .work .jobs{
+        /* margin-left: 20px; */
+        height: 600px;
+    }
+
+    .work .jobs .run-buddy{
+        height: 30%;
+        margin-bottom: 5px;
+    }
+
+    .work .jobs .run-buddy p{
+        font-size: 25px;
+        left: 20px;
+    }
+
+    .work .jobs .job{
+        height: 33%;
+        width: 90%;
+    }
+
+    .work .jobs .job p{
+        font-size: 25px;
+    }
+    .contact-me-container{
+        height: 200px;
+        /* margin-left: 5px; */
+        margin-top: 20px;
+    }
+
+    .contact-me{
+        left: 22%;
+        padding-left: 10px;
+    }
+
+    .contact-me p{
+        font-size: 35px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .aboutme-container{
+        height: 500px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .hero .hero-text{
+        font-size: 20px;
+    }
+
+    .aboutme-container{
+        height: 400px;
+        margin-left: 10px;
+    }
+
+    .aboutme h3{
+        font-size: 25px;
+    }
+
+    .aboutme p{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .work-container{
+        margin-left: 10px;
+        height: 600px;
+    }
+
+    .work h3{
+        font-size: 25px;
+        text-align: right;
+    }
+
+    .work .jobs{
+        margin-left: 20px;
+    }
+
+    .work .jobs .run-buddy{
+        height: 25%;
+        margin-bottom: 5px;
+    }
+
+    .work .jobs .run-buddy p{
+        font-size: 25px;
+        left: 20px;
+    }
+
+    .work .jobs .job{
+        height: 35%;
+        width: 90%;
+    }
+
+    .work .jobs .job p{
+        font-size: 25px;
+    }
+
+    .contact-me-container{
+        height: 200px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .contact-me{
+        left: 27%;
+        padding-left: 20px
+    }
+
+    .contact-me p{
+        font-size: 20px;
+        padding: 5px;
+    }
+}
 
