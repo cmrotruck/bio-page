@@ -1,67 +1,65 @@
-:root{
-    --primary-color: rgb(21, 21, 83);
-    --secondary-color: rgb(117, 117, 212);
+:root {
+  --primary-color: rgb(21, 21, 83);
+  --secondary-color: rgb(117, 117, 212);
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;    
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-header{
-
-    padding: 20px;
-    background-color: var(--primary-color);
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    /* background-color: var(--tertiary-color); */
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* position: sticky;
+header {
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* background-color: var(--tertiary-color); */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* position: sticky;
     position: -webkit-sticky; */
-    top: 0;
-    z-index: 9999;
-    border-bottom: 2px solid black;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 2px solid black;
 }
 
-header h1 a{
-    color: white;
-    text-decoration: none;
-    font-size: 55px;
+header h1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 55px;
 }
 
-header nav{
-    float: right;
-    margin: 7px 0;
-    color: white;
-    display: block;
-    padding-inline-start: 40px;
-    font-size: 25px;
+header nav {
+  float: right;
+  margin: 7px 0;
+  color: white;
+  display: block;
+  padding-inline-start: 40px;
+  font-size: 25px;
 }
 
-header nav ul{
-    display: flex;
-    flex-wrap: wrap;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-header nav ul li{
-    display: inline;
-    padding: 20px;    
+header nav ul li {
+  display: inline;
+  padding: 20px;
 }
 
-header nav ul li a{
-    text-decoration: none;
-    color: white;
+header nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 
-body div{
-    background-color: white;
+body div {
+  background-color: white;
+  display: inline-flex;
 }
 
-
-
-.hero{
+.hero {
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -72,360 +70,364 @@ body div{
   position: relative;
 }
 
-.hero img{
-    width: 100%;
+.hero img {
+  width: 100%;
 }
 
-.hero .hero-text{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    color: white;
-    background-color: var(--secondary-color);
-    display: flex;
-    font-size: 35px;
+.hero .hero-text {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  background-color: var(--secondary-color);
+  display: flex;
+  font-size: 35px;
 }
 
-.aboutme-container{
-    margin-top: 3.5%; 
-    height: 200px; 
-    display: flex;
-    position: relative;
-    flex-wrap: wrap; 
+.aboutme-container {
+  margin-top: 3.5%;
+  height: 200px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
 }
 
-.aboutme h3{
-    width: 20%;
-    text-align: right;
-    font-size: 35px;
-    position: absolute;
+.aboutme h3 {
+  width: 20%;
+  text-align: right;
+  font-size: 35px;
+  position: absolute;
 }
 
-.aboutme p{
-    width: 70%;
-    left: 22%;
-    font-size: 25px;
-    border-left: 2px solid black;
-    padding: 0 20px 0 20px;  
-    position: absolute;
+.aboutme p {
+  width: 70%;
+  left: 22%;
+  font-size: 25px;
+  border-left: 2px solid black;
+  padding: 0 20px 0 20px;
+  position: absolute;
 }
 
-.work-container{
-    margin-top: 3.5%; 
-    height: 700px; 
-    display: flex;
-    position: relative;
-    flex-wrap: wrap; 
+.work-container {
+  margin-top: 3.5%;
+  height: 750px;
+  /* use height to adjust space for projects */
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
 }
 
-.work{
-    width: 100%;
-    position: relative;
+.work {
+  width: 100%;
+  position: flex;
 }
 
-.work h3{
-    width: 20%;
-    text-align: right;
-    position: absolute;
-    font-size: 35px;
+.work h3 {
+  width: 20%;
+  text-align: right;
+  position: absolute;
+  font-size: 35px;
 }
 
-.work .jobs{
-    width: 70%;
-    height: 100%;
-    left: 22%; 
-    position: absolute;
-    border-left: 2px solid black;
-    padding: 20px;
-    /* display: flex; */
+.work .jobs {
+  width: 70%;
+  height: 100%;
+  left: 22%;
+  position: absolute;
+  border-left: 2px solid black;
+  padding: 20px;
+  flex-wrap: wrap;
+  /* display: flex; */
 }
 
-.work .jobs .run-buddy{
-    width: 90%;
-    height: 50%;
-    background-color: gray;
-    padding: 0 20px;
-    /* margin: 0 15px; */
-    position: relative;
+.work .jobs .run-buddy {
+  width: 90%;
+  height: 50%;
+  background-color: gray;
+  padding: 0 20px;
+  /* margin: 0 15px; */
+  position: relative;
 }
 
-.work .jobs .run-buddy img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0px;
+.work .jobs .run-buddy img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
 }
 
-.work .jobs .run-buddy p{
-    position: absolute;
-    left: 60px;
-    bottom: 20px;
-    font-size: 85px;
-    color: #fce138;
-    font-family: Helvetica, Arial, sans-serif;
+.work .jobs .run-buddy p {
+  position: absolute;
+  left: 60px;
+  bottom: 20px;
+  font-size: 85px;
+  color: #fce138;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.work .jobs .job{
-    width: 44.8%;
-    height: 45%;
-    background-color: gray;
-    margin: 5px 0 0 0;
-    position: relative;
-    display: inline-block;
+.work .jobs {
+  height: 600px;
 }
 
-.work .jobs .job img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0px;
+.work .jobs .job {
+  width: 44.8%;
+  height: 45%;
+  background-color: gray;
+  margin: 5px 0 0 0;
+  position: relative;
+  display: inline-flexbox;
 }
 
-.work .jobs .job p{
-    position: absolute;
-    left: 30px;
-    bottom: 10px;
-    font-size: 35px;
-    color: black;
-    font-family: Helvetica, Arial, sans-serif;
+.work .jobs .job img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
 }
 
-.contact-me-container{
-    margin-top: 3.5%; 
-    height: 200px; 
-    display: flex;
-    position: relative;
-    flex-wrap: wrap; 
+.work .jobs .job p {
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  font-size: 35px;
+  color: yellow;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.contact-me{
-    width: 70%;
-    height: 100px;
-    left: 22%;
-    position: absolute;
-    padding-left: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    border-left: 2px solid black;
+.contact-me-container {
+  margin-top: 12%;
+  height: 200px;
+  /* display: flex; */
+  /* position: relative; */
+  /* flex-wrap: wrap; */
 }
 
-.contact-me p{
-    font-size: 35px;
-    padding: 20px;
+.contact-me {
+  width: 70%;
+  height: 100px;
+  left: 22%;
+  position: absolute;
+  padding-left: 100px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  border-left: 2px solid black;
 }
 
-footer{
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: var(--primary-color);
-    color: white;
-    border-top: 2px solid black;
+.contact-me p {
+  font-size: 35px;
+  padding: 20px;
 }
 
-footer h2{
-    font-size: 20px;
+footer {
+  padding: 40px 35px;
+  /* display: flex; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  border-top: 2px solid black;
 }
 
-footer div{
-    background-color: var(--primary-color);
-    border: none;
+footer h2 {
+  font-size: 20px;
+}
+
+footer div {
+  background-color: var(--primary-color);
+  border: none;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 1062px) {
-    .aboutme-container{
-        height: 300px;
-    }
+  .aboutme-container {
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 980px) {
-    .aboutme-container{
-        height: 300px;
-    }
+  .aboutme-container {
+    height: 300px;
+  }
 
-    .work-container{
-        height: 700px;
-        margin-top: 0;
-    }
-    
-    .work{
-        height: 200px;;
-    }
+  .work-container {
+    height: 700px;
+    margin-top: 0;
+  }
 
-    .work h3{
-        text-align: right;
-    }
+  .work {
+    height: 200px;
+  }
 
-    .work .jobs{
-        /* margin-left: 20px; */
-        height: 700px;
-    }
+  .work h3 {
+    text-align: right;
+  }
 
-    .work .jobs .run-buddy{
-        height: 30%;
-        margin-bottom: 5px;
-    }
+  .work .jobs {
+    /* margin-left: 20px; */
+    height: 700px;
+  }
 
-    .work .jobs .run-buddy p{
-        font-size: 25px;
-        left: 20px;
-    }
+  .work .jobs .run-buddy {
+    height: 30%;
+    margin-bottom: 5px;
+  }
 
+  .work .jobs .run-buddy p {
+    font-size: 25px;
+    left: 20px;
+  }
 
-    .work .jobs .job{
-        height: 35%;
-        width: 90%;
-    }
+  .work .jobs .job {
+    height: 35%;
+    width: 90%;
+  }
 
-    .work .jobs .job p{
-        font-size: 25px;
-    }
+  .work .jobs .job p {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 860px) {
-    .aboutme-container{
-        height: 350px;
-    }
+  .aboutme-container {
+    height: 350px;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    .hero .hero-text{
-        font-size: 20px;
-    }
+  .hero .hero-text {
+    font-size: 20px;
+  }
 
-    .aboutme-container{
-        height: 400px;
-    }
+  .aboutme-container {
+    height: 400px;
+  }
 
-    .work-container{
-        height: 600px;
-    }
-    
-    .work{
-        height: 200px;;
-    }
+  .work-container {
+    height: 600px;
+  }
 
-    .work h3{
-        text-align: right;
-    }
+  .work {
+    height: 200px;
+  }
 
-    .work .jobs{
-        /* margin-left: 20px; */
-        height: 600px;
-    }
+  .work h3 {
+    text-align: right;
+  }
 
-    .work .jobs .run-buddy{
-        height: 30%;
-        margin-bottom: 5px;
-    }
+  .work .jobs {
+    /* margin-left: 20px; */
+    height: 600px;
+  }
 
-    .work .jobs .run-buddy p{
-        font-size: 25px;
-        left: 20px;
-    }
+  .work .jobs .run-buddy {
+    height: 30%;
+    margin-bottom: 5px;
+  }
 
-    .work .jobs .job{
-        height: 33%;
-        width: 90%;
-    }
+  .work .jobs .run-buddy p {
+    font-size: 25px;
+    left: 20px;
+  }
 
-    .work .jobs .job p{
-        font-size: 25px;
-    }
-    .contact-me-container{
-        height: 200px;
-        /* margin-left: 5px; */
-        margin-top: 20px;
-    }
+  .work .jobs .job {
+    height: 33%;
+    width: 90%;
+  }
 
-    .contact-me{
-        left: 22%;
-        padding-left: 10px;
-    }
+  .work .jobs .job p {
+    font-size: 25px;
+  }
+  .contact-me-container {
+    height: 200px;
+    /* margin-left: 5px; */
+    margin-top: 20px;
+  }
 
-    .contact-me p{
-        font-size: 35px;
-        padding: 5px;
-    }
+  .contact-me {
+    left: 22%;
+    padding-left: 10px;
+  }
+
+  .contact-me p {
+    font-size: 35px;
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 665px) {
-    .aboutme-container{
-        height: 500px;
-    }
+  .aboutme-container {
+    height: 500px;
+  }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    .hero .hero-text{
-        font-size: 20px;
-    }
+  .hero .hero-text {
+    font-size: 20px;
+  }
 
-    .aboutme-container{
-        height: 400px;
-        margin-left: 10px;
-    }
+  .aboutme-container {
+    height: 400px;
+    margin-left: 10px;
+  }
 
-    .aboutme h3{
-        font-size: 25px;
-    }
+  .aboutme h3 {
+    font-size: 25px;
+  }
 
-    .aboutme p{
-        margin-left: 20px;
-        font-size: 20px;
-    }
+  .aboutme p {
+    margin-left: 20px;
+    font-size: 20px;
+  }
 
-    .work-container{
-        margin-left: 10px;
-        height: 600px;
-    }
+  .work-container {
+    margin-left: 10px;
+    height: 600px;
+  }
 
-    .work h3{
-        font-size: 25px;
-        text-align: right;
-    }
+  .work h3 {
+    font-size: 25px;
+    text-align: right;
+  }
 
-    .work .jobs{
-        margin-left: 20px;
-    }
+  .work .jobs {
+    margin-left: 20px;
+  }
 
-    .work .jobs .run-buddy{
-        height: 25%;
-        margin-bottom: 5px;
-    }
+  .work .jobs .run-buddy {
+    height: 25%;
+    margin-bottom: 5px;
+  }
 
-    .work .jobs .run-buddy p{
-        font-size: 25px;
-        left: 20px;
-    }
+  .work .jobs .run-buddy p {
+    font-size: 25px;
+    left: 20px;
+  }
 
-    .work .jobs .job{
-        height: 35%;
-        width: 90%;
-    }
+  .work .jobs .job {
+    height: 35%;
+    width: 90%;
+  }
 
-    .work .jobs .job p{
-        font-size: 25px;
-    }
+  .work .jobs .job p {
+    font-size: 25px;
+  }
 
-    .contact-me-container{
-        height: 200px;
-        margin-left: 10px;
-        margin-top: 20px;
-    }
+  .contact-me-container {
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
 
-    .contact-me{
-        left: 27%;
-        padding-left: 20px
-    }
+  .contact-me {
+    left: 27%;
+    padding-left: 20px;
+  }
 
-    .contact-me p{
-        font-size: 20px;
-        padding: 5px;
-    }
+  .contact-me p {
+    font-size: 20px;
+    padding: 5px;
+  }
 }
-
